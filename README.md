@@ -1,5 +1,14 @@
 # Vue 3 + TypeScript + Vite
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+”一个快坏掉的玩具项目“
+用英语怎么说
+自然、地道翻译
+a toy project that's falling apart
+更口语 / 自嘲版（程序员常用）
+a broken toy project
+a toy project on its last legs（快撑不住了）
+a shoddy toy project（劣质、快坏的）
+小说明
+toy project：指练手项目、小玩具项目（你语境里的意思）
+falling apart：散架、快坏掉
+不用直译 "quickly broken"，英语里不这么说.
