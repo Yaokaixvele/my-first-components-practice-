@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import myThrottle from '../../utils/MyThrottle';
 import { inputProps} from './input'
 defineOptions({
 	name: 'MyInput'
@@ -10,11 +11,14 @@ const emit = defineEmits<{
 }>()
 const handleInput = (e: Event) =>{
 	const { value } = e.target as HTMLInputElement
-	emit('update:modelValue',value)
 	console.log("此时传入的是：",value)
-	emit('input',value)
+	emit('update:modelValue',value)
+	throttledEmit(value)
 }
-
+const throttledEmit = myThrottle((val: string | number) =>{
+	
+	emit('input',val)
+},500)
 </script>
 <template>
 	<div class="my-input" :class="{ 'is-disabled': disabled }">

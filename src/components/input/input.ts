@@ -16,6 +16,10 @@ export const inputProps = {
   clearable: {
     type: Boolean,
     default: false
+  },
+  throttle: {
+    type: Number,
+    default: 400
   }
 } as const
 export type InputProps = ExtractPropTypes<typeof inputProps>
